@@ -1,0 +1,13 @@
+.vs
+MyCart.Data/bin
+MyCart.Data/obj
+MyCart.Data/connectionStrings.json
+
+MyCart.Domain/bin
+MyCart.Domain/obj
+
+MyCart.Services/bin
+MyCart.Services/obj
+
+MyCart.WebAPI/bin
+MyCart.WebAPI/obj
