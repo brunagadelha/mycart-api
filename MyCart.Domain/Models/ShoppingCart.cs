@@ -1,14 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace MyCart.Domain.Models
 {
-    public class ShoppingCart
+    public class ShoppingCart : Entity
     {
-        public int Id { get; set; }
-        public DateTime CreatedOn { get; set; }
-        public decimal Total { get; set; }
+        public ShoppingCart()
+        {
+            Items = new List<ShoppingCartItem>(); 
+        }
+
+        public decimal TotalPrice { get; set; }
+        public decimal TotalItems
+        {
+            get
+            {
+                return Items.Count();
+            }
+        }
+
+        public DateTime CreatedAt { get; set; }
+
         public IEnumerable<ShoppingCartItem> Items { get; internal set; }
+        
     }
 }

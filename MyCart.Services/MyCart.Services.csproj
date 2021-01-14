@@ -4,4 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyCart.Data\MyCart.Data.csproj" />
+    <ProjectReference Include="..\MyCart.Domain\MyCart.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\ShoppingCartItem\" />
+  </ItemGroup>
+
 </Project>

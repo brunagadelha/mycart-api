@@ -12,8 +12,8 @@ namespace MyCart.Data.Mappings
         public void Configure(EntityTypeBuilder<ShoppingCart> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.Property(x => x.Total).IsRequired(); //set precision => money 
-            builder.Property(x => x.CreatedOn).IsRequired(); 
+            builder.Property(x => x.TotalPrice).IsRequired(); //set precision => money 
+            builder.Property(x => x.CreatedAt).IsRequired(); 
         }
     }
 }
